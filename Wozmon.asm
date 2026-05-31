@@ -24,7 +24,7 @@ MODE  = $2B                 ; $00=XAM, $7F=STOR, $AE=BLOCK XAM
 IN    = INPUT_BUFFER        ; Input buffer
 
 RESET:
-  lda     #$1F              ; 8-N-1, 115200 baud
+  lda     #$1F              ; 8-N-1, 19200 baud
   sta     SC_CTRL
   ldy     #$8B              ; No parity, no echo, no interrupts
   sty     SC_CMD
